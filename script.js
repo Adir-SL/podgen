@@ -1,0 +1,3 @@
+function genXML() {
+    alert('XML');
+}
