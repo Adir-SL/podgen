@@ -1,0 +1,10 @@
+#xml{
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 2px solid #cccccc;
+}
+#xml:focus {
+    border-color: #0000ff;
+    outline: none;
+}
