@@ -1,21 +1,30 @@
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
 }
-.flex *{
-    flex-grow: 1;
+
+.flex * {
+  flex-grow: 1;
 }
 
 #xml {
-    margin-top: 16px;
-    border-radius: 8px;
-    padding: 8px 16px;
-    border: 2px solid #cccccc;
+  margin-top: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 2px solid #cccccc;
 }
 
 #xml:focus {
-    border-color: #0000ff;
-    outline: none;
+  border-color: #0000ff;
+  outline: none;
+}
+
+.icon-btn {
+  background-color: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
 }
