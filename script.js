@@ -19,3 +19,7 @@ function genXML() {
 
     document.getElementById("xml").innerText += '\n</channel>\n</rss>';
 }
+
+function downloadXML() {
+alert('yyy')
+}
