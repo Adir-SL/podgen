@@ -21,5 +21,16 @@ function genXML() {
 }
 
 function downloadXML() {
-    alert('yyy')
+    // alert('yyy')
+    const textareaContent = document.getElementById('xml').value;
+    const blob = new Blob([textareaContent], { type: 'application/xml' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'audio.xml';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
