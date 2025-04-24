@@ -20,30 +20,29 @@ function genXML() {
     document.getElementById("xml").innerText += '\n</channel>\n</rss>';
 }
 
-function downloadXML() {
-    var url = "audio.xml";
-    //Create XMLHTTP Request.
-    var req = new XMLHttpRequest();
-    req.open("GET", url, true);
-    req.responseType = "blob";
-    req.onload = function () {
-        //Convert the Byte Data to BLOB object.
-        var blob = new Blob([req.response], { type: "application/octetstream" });
+// function downloadXML() {
+//     const link = document.querySelector('a.dynamic');
 
-        //Check the Browser type and download the File.
-        var isIE = false || !!document.documentMode;
-        if (isIE) {
-            window.navigator.msSaveBlob(blob, fileName);
-        } else {
-            var url = window.URL || window.webkitURL;
-            link = url.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.setAttribute("download", fileName);
-            a.setAttribute("href", link);
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
-    };
-    req.send();
+//     let name = 'Monty';
+
+//     let text = `My name in ${name}.
+
+// I love writing tutorials.`;
+
+//     link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+
+//     link.setAttribute('download', `${name.toLowerCase()}.xml`);
+// }
+
+function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
 }
