@@ -9,7 +9,7 @@ It generates an XML that can be used in most Podcast apps to listen to your own 
 ### Product related:
  - [ ] Design this thing
  - [ ] Seperate episodes needs seperate durations
- - [ ] Output file should be named audio.xml
+ - [x] Output file should be named audio.xml
  - [x] audio.xml also appears in the code
  - [ ] Add a Download button
 
