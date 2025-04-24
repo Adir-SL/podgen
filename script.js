@@ -21,16 +21,29 @@ function genXML() {
 }
 
 function downloadXML() {
-    // alert('yyy')
-    const textareaContent = document.getElementById('xml').value;
-    const blob = new Blob([textareaContent], { type: 'application/xml' });
-    const url = URL.createObjectURL(blob);
+    var url = "audio.xml";
+    //Create XMLHTTP Request.
+    var req = new XMLHttpRequest();
+    req.open("GET", url, true);
+    req.responseType = "blob";
+    req.onload = function () {
+        //Convert the Byte Data to BLOB object.
+        var blob = new Blob([req.response], { type: "application/octetstream" });
 
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'audio.xml';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+        //Check the Browser type and download the File.
+        var isIE = false || !!document.documentMode;
+        if (isIE) {
+            window.navigator.msSaveBlob(blob, fileName);
+        } else {
+            var url = window.URL || window.webkitURL;
+            link = url.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.setAttribute("download", fileName);
+            a.setAttribute("href", link);
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    };
+    req.send();
 }
