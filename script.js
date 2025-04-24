@@ -20,21 +20,7 @@ function genXML() {
     document.getElementById("xml").innerText += '\n</channel>\n</rss>';
 }
 
-// function downloadXML() {
-//     const link = document.querySelector('a.dynamic');
-
-//     let name = 'Monty';
-
-//     let text = `My name in ${name}.
-
-// I love writing tutorials.`;
-
-//     link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-
-//     link.setAttribute('download', `${name.toLowerCase()}.xml`);
-// }
-
-function download(filename, text) {
+function downloadFile(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
     element.setAttribute('download', filename);
