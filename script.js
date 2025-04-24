@@ -34,3 +34,14 @@ function downloadXML() {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
+
+document.getElementById('downloadLink').addEventListener('click', function (e) {
+    e.preventDefault(); // prevents default anchor behavior
+    alert('yyy')
+    // const content = document.getElementById('xml').value;
+    // const blob = new Blob([content], { type: 'application/xml' });
+    // const url = URL.createObjectURL(blob);
+
+    // this.href = url;
+    // this.download = 'content.xml';
+});
