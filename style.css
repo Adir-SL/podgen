@@ -22,13 +22,13 @@
   outline: none;
 }
 
-#xml .icon-btn {
+/* #xml .icon-btn {
   display: none;
 }
 
 #xml:hover .icon-btn {
   display: block;
-}
+} */
 
 .icon-btn {
   position: absolute;
