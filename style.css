@@ -9,6 +9,10 @@
   flex-grow: 1;
 }
 
+.xml-wrapper {
+  position: relative;
+}
+
 #xml {
   position: relative;
   margin-top: 16px;
@@ -22,17 +26,21 @@
   outline: none;
 }
 
-/* #xml .icon-btn {
+.xml-wrapper .icon-btn {
   display: none;
 }
 
-#xml:hover .icon-btn {
+.xml-wrapper:hover .icon-btn {
   display: block;
-} */
+}
+
+.xml-wrapper:has(#xml:empty):hover .icon-btn {
+  display: none !important;
+}
 
 .icon-btn {
   position: absolute;
-  top: 40px;
+  top: 4px;
   right: 6px;
   background: none;
   border: none;
