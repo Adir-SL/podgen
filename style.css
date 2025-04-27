@@ -12,6 +12,10 @@ body {
   flex-direction: column;
 }
 
+.wrapper {
+  height: calc(100vh - 16px);
+}
+
 /* .flex * {
   flex-grow: 1;
 } */
