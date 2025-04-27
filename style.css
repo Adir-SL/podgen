@@ -19,8 +19,8 @@ body {
 .inputs{
   background-color: #000000;
   border-radius: 8px;
+  padding: 16px;
 }
-
 .xml-wrapper {
   position: relative;
   min-width: 80%;
