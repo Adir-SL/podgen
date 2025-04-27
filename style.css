@@ -12,9 +12,9 @@ body {
   flex-direction: column;
 }
 
-.flex * {
+/* .flex * {
   flex-grow: 1;
-}
+} */
 
 .xml-wrapper {
   position: relative;
