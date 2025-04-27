@@ -16,9 +16,10 @@ body {
   height: calc(100vh - 16px);
 }
 
-/* .flex * {
-  flex-grow: 1;
-} */
+.inputs{
+  background-color: #000000;
+  border-radius: 8px;
+}
 
 .xml-wrapper {
   position: relative;
