@@ -32,3 +32,7 @@ function downloadFile(filename, text) {
 
     document.body.removeChild(element);
 }
+
+function updateImage(event) {
+    console.log(event.target.value);
+}
