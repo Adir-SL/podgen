@@ -34,5 +34,10 @@ function downloadFile(filename, text) {
 }
 
 function updateImage(event) {
+    document.getElementById("podImage").classList.remove("broken");
     document.getElementById("podImage").src = event.target.value;
+}
+
+function errorImage(event) {
+    document.getElementById("podImage").classList.add("broken");
 }

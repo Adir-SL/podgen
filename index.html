@@ -28,9 +28,9 @@
             <input type="text" placeholder="Duration" id="duration" />
             <input type="text" placeholder="Image link" id="image" onchange="updateImage(event);" />
             <button onclick="genXML();">Generate XML</button>
-            <br/>
-            <br/>
-            <img src="" id="podImage" />
+            <br />
+            <br />
+            <img src="" id="podImage" onerror="errorImage(event);" />
         </div>
 
         <div class="xml-wrapper">
