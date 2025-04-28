@@ -101,5 +101,5 @@ button:hover {
 }
 
 .broken {
-  display: none;
+  opacity: 0;
 }
