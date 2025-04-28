@@ -26,8 +26,11 @@
                 <option value=".m4b">.m4b</option>
             </select>
             <input type="text" placeholder="Duration" id="duration" />
-            <input type="text" placeholder="Image link" id="image" />
+            <input type="text" placeholder="Image link" id="image" onchange="updateImage(event);" />
             <button onclick="genXML();">Generate XML</button>
+            <br/>
+            <br/>
+            <img src="" />
         </div>
 
         <div class="xml-wrapper">
