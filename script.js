@@ -34,6 +34,5 @@ function downloadFile(filename, text) {
 }
 
 function updateImage(event) {
-    // console.log(event.target.value);
     document.getElementById("podImage").src = event.target.value;
 }
