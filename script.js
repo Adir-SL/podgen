@@ -48,3 +48,7 @@ function updateTitle(event) {
 function updatePod(event) {
     document.getElementById("podName").innerText = event.target.value;
 }
+
+function updateDur(event) {
+    document.getElementById("duration").innerText = event.target.value;
+}
