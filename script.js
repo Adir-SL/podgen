@@ -41,3 +41,7 @@ function updateImage(event) {
 function errorImage(event) {
     document.getElementById("podImage").classList.add("broken");
 }
+
+function updateTitle(event) {
+    document.getElementById("title").innerText = event.target.value;
+}
