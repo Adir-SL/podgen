@@ -103,6 +103,7 @@ button:hover {
 
 .preview {
   width: 240px;
+  box-sizing: content-box;
 }
 
 .broken {
