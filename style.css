@@ -108,7 +108,8 @@ button:hover {
 }
 
 .skeleton:empty {
-  background-color: grey;
+  background-color: #bbbbbb;
   width: 100%;
   height: 2.25ch;
+  border-radius: 8px;
 }
