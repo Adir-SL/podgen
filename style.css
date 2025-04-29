@@ -101,6 +101,10 @@ button:hover {
   border-radius: 8px;
 }
 
+.preview {
+  width: 240px;
+}
+
 .broken {
   opacity: 0;
 }
