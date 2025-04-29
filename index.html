@@ -28,9 +28,6 @@
             <input type="text" placeholder="Duration" id="duration" />
             <input type="text" placeholder="Image link" id="image" oninput="updateImage(event);" />
             <button onclick="genXML();">Generate XML</button>
-            <br />
-            <br />
-            <img src="" id="podImage" onerror="errorImage(event);" />
         </div>
 
         <div class="xml-wrapper">
@@ -44,7 +41,9 @@
                 </svg>
             </button>
         </div>
-        <div class="flex column preview"></div>
+        <div class="flex column preview">
+            <img src="" id="podImage" onerror="errorImage(event);" />
+        </div>
     </div>
 </body>
 
