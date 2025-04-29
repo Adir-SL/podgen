@@ -51,5 +51,5 @@ function updatePod(event) {
 }
 
 function updateDur(event) {
-    document.getElementById("duration").innerText = event.target.value;
+    document.getElementById("podDur").innerText = event.target.value;
 }
