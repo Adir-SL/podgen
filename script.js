@@ -45,6 +45,7 @@ function errorImage(event) {
 function updateTitle(event) {
     document.getElementById("title").innerText = event.target.value + " Part 1";
 }
+
 function updatePod(event) {
     document.getElementById("podName").innerText = event.target.value;
 }
