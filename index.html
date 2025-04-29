@@ -17,7 +17,7 @@
     <div class="flex wrapper">
         <div class="flex column inputs">
             <input type="text" placeholder="https://example.com" id="domain" />
-            <input type="text" placeholder="File name" id="filename" />
+            <input type="text" placeholder="File name" id="filename" oninput="updateTitle(event)" />
             <input type="text" placeholder="Podcast name" id="name" />
             <input type="number" placeholder="1" id="number" />
             <select id="type">
@@ -43,6 +43,7 @@
         </div>
         <div class="flex column preview">
             <img src="" id="podImage" onerror="errorImage(event);" />
+            <h2 id="title"></h2>
         </div>
     </div>
 </body>
