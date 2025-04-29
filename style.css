@@ -106,3 +106,7 @@ button:hover {
 .broken {
   opacity: 0;
 }
+
+.skeleton:empty {
+  background-color: grey;
+}
