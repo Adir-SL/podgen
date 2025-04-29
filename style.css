@@ -16,11 +16,14 @@ body {
   height: calc(100vh - 16px);
 }
 
-.inputs {
+.wrapper>div {
   background-color: #ffffff;
-  border: 2px solid #00000012;
-  border-radius: 8px;
   padding: 16px;
+  border-radius: 8px;
+  border: 2px solid #00000012;
+}
+
+.inputs {
   width: fit-content;
 }
 
@@ -34,10 +37,6 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   height: 100%;
-  border-radius: 8px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #00000012;
   box-sizing: border-box;
   color: #666666;
   overflow: auto;
@@ -72,7 +71,8 @@ body {
   cursor: pointer;
 }
 
-input, select {
+input,
+select {
   border: none;
   background-color: #ededed;
   padding: 6px 8px;
