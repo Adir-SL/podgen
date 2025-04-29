@@ -23,7 +23,8 @@ body {
   border: 2px solid #00000012;
 }
 
-.inputs {
+.inputs,
+.preview {
   width: fit-content;
 }
 
@@ -78,6 +79,7 @@ select {
   padding: 6px 8px;
   border-radius: 4px;
   color: #000000;
+  min-width: 240px;
 }
 
 button {
@@ -99,11 +101,6 @@ button:hover {
   height: 240px;
   object-fit: cover;
   border-radius: 8px;
-}
-
-.preview {
-  width: 240px;
-  box-sizing: content-box;
 }
 
 .broken {
