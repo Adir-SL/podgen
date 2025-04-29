@@ -87,13 +87,13 @@ button {
   font-weight: 700;
   padding: 12px;
   border-radius: 32px;
-  background-color: hotpink;
+  background-color: #e92f8c;
   color: #ffffff;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #e92f8c;
+  opacity: 0.6;
 }
 
 #podImage {
