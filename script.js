@@ -51,5 +51,6 @@ function updatePod(event) {
 }
 
 function updateDur(event) {
+    document.getElementById("curDur").innerText = '00:00:00';
     document.getElementById("podDur").innerText = event.target.value;
 }
