@@ -125,6 +125,15 @@ h2,
 p {
   margin: 0;
   text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
 }
 
 hr {
