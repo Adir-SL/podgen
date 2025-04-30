@@ -124,6 +124,7 @@ button:hover {
 h2,
 p {
   margin: 0;
+  text-align: center;
 }
 
 hr {
