@@ -149,5 +149,6 @@ hr {
 hr+p {
   margin-top: 0;
   text-align: right;
-  font-size: 0.75em;
+  font-size: 12px;
+  justify-content: space-between;
 }
