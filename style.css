@@ -104,10 +104,6 @@ button:hover {
   border-radius: 8px;
 }
 
-.broken {
-  /* opacity: 0; */
-}
-
 .broken::after{
   content: '';
   position: absolute;
