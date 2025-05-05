@@ -14,7 +14,7 @@ function genXML() {
     }
     var i;
     for (i = 0; i < number; i++) {
-        document.getElementById("xml").innerText += '\n<item>\n<author>The Feed</author>\n<itunes:author>The Feed</itunes:author>\n<title>' + name + ' Part ' + number + '</title >\n <pubDate > Sun, 30 Mar 2025 13:00:00 GMT</pubDate >\n <enclosure url = "' + domain + '/' + filename + '_' + number + type + '" type = "audio/mpeg" />\n <itunes:duration > ' + duration + '</itunes:duration >\n <guid isPermaLink = "false" > cepod10</guid >\n <itunes:explicit > no</itunes:explicit >\n <description >\nThe ever changing feed.\n</description >\n</item >\n';
+        document.getElementById("xml").innerText += '\n<item>\n<author>The Feed</author>\n<itunes:author>The Feed</itunes:author>\n<title>' + name + ' Part ' + number + '</title>\n <pubDate>Sun, 30 Mar 2025 13:00:00 GMT</pubDate>\n <enclosure url = "' + domain + '/' + filename + '_' + number + type + '" type = "audio/mpeg" />\n <itunes:duration>' + duration + '</itunes:duration>\n <guid isPermaLink = "false">cepod10</guid>\n <itunes:explicit>no</itunes:explicit>\n <description>\nThe ever changing feed.\n</description>\n</item>\n';
     }
 
     document.getElementById("xml").innerText += '\n</channel>\n</rss>';
