@@ -7,7 +7,9 @@ function genXML() {
     var domain = document.getElementById("domain").value;
     var duration = document.getElementById("duration").value;
     var date = document.getElementById("date").value;
-    var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    var year = date.slice(0, date.indexOf("-"));
+    var day = date.slice(date.lastIndexOf("-") + 1, date.length);
+    var monthArray = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     var time = document.getElementById("time").value + ":00 GMT";
 
     document.getElementById("xml").innerText = '<?xml version="1.0" encoding="UTF-8" ?>\n<rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">\n  <channel>\n    <title>' + name + '</title>\n    <googleplay:author>The Feed</googleplay:author>\n    <rawvoice:rating>TV-G</rawvoice:rating>\n    <rawvoice:location>Rio de Janeiro, Brazil</rawvoice:location>\n    <rawvoice:frequency>Daily</rawvoice:frequency>\n    <author>' + name + '</author>\n    <itunes:author>The Feed</itunes:author>\n    <itunes:email>feed@example.com</itunes:email>\n    <itunes:category text="Technology" />\n    <image>\n<url>' + image + '</url>\n<title>Audio Feed</title>\n<link>' + domain + '</link>\n    </image>\n    <itunes:owner>\n<itunes:name>The Feed</itunes:name>\n<itunes:email>feed@example.com</itunes:email>\n    </itunes:owner>\n    <itunes:keywords>Audio Feed</itunes:keywords>\n    <copyright>The Feed</copyright>\n    <description>The ever changing feed.</description>\n    <googleplay:image href="' + image + '" />\n    <language>en-us</language>\n    <itunes:explicit>no</itunes:explicit>\n    <pubDate>' + date + ' ' + time + '</pubDate>\n    <link>' + domain + '/audio.xml</link>\n    <itunes:image href="' + image + '" />\n';
